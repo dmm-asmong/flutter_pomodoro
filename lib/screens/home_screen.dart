@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
-        children: [
+        children: [ //flexible로 공간확보
           Flexible(
             flex: 1,
             child: Container(
