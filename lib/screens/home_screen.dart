@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
     timer.cancel();
   }
 
+
   String format(int seconds) {
     var duration = Duration(seconds: seconds);
     return duration.toString().split(".").first.substring(2, 7);
