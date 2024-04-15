@@ -63,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // appBar: AppBar(title: Text('오늘의 집중시간'),),
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         children: [ //flexible로 공간확보
@@ -110,7 +111,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         'Reset',
                         style: TextStyle(
                           fontSize: 30,
-                          color: Color(0xff335577),
+                          color: Color(0xffffbe0b),
                         ),
                       )),
                 ],
@@ -136,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             fontSize: 20,
                             fontWeight: FontWeight.w600,
                             color:
-                                Theme.of(context).textTheme.displayLarge!.color,
+                            Theme.of(context).textTheme.displayLarge!.color,
                           ),
                         ),
                         Text(
@@ -145,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             fontSize: 58,
                             fontWeight: FontWeight.w600,
                             color:
-                                Theme.of(context).textTheme.displayLarge!.color,
+                            Theme.of(context).textTheme.displayLarge!.color,
                           ),
                         ),
                       ],
