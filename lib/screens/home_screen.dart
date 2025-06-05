@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool isRunning = false;
   int totalPomodoros = 0;
 
-  late Timer timer; //당장 초기화하지 않아도 된다 late, 나중에 초기화할 것이라고
+  Timer? timer; // 타이머가 없을 수도 있으므로 nullable 처리
 
   void onTick(Timer timer) {
     if (totalSeconds == 0) {
@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onPausePressed() {
-    timer.cancel();
+    timer?.cancel();
     setState(() {
       isRunning = false;
     });
@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
       isRunning = false;
       totalSeconds = twentyFiveMinutes;
     });
-    timer.cancel();
+    timer?.cancel();
   }
 
 
