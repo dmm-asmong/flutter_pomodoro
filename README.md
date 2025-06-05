@@ -1,6 +1,6 @@
 # flutter_pomodoro
 
-A new Flutter project.
+A new Flutter project targeting Android 14 (API level 34).
 
 ## Getting Started
 
